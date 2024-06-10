@@ -1,0 +1,181 @@
+﻿<Window x:Class="Byte.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Byte"
+        mc:Ignorable="d"
+        Title="Основне вікно" Height="550" 
+        Width="515"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" >
+    <Grid Background="#fe6e7c" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="38*"/>
+        </Grid.ColumnDefinitions>
+        <Border 
+            Background="#ffccd0" 
+            RenderTransformOrigin="0.5,0.5" 
+            Height="534" 
+            Width="326" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+        <Button
+           Background="#fe90a2"
+           Foreground="#3F3F3F" 
+           Content="bool"
+           BorderThickness="0,0,0,0"
+           FontFamily="Bahnschrift Light" 
+            FontSize="24"
+           Width="170"
+           Height="50" 
+           Margin="62,39,0,0"
+           VerticalAlignment="Top" 
+           HorizontalAlignment="Left" Click="BoolButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="byte"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Height="50"
+            Width="170"
+            Margin="62,94,0,0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left" Click="ByteButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="sbyte"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="62,149,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Click="SByteButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe6e7c"
+            Foreground="#3F3F3F" 
+            Content="Exit"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="55,0,0,40"
+            VerticalAlignment="Bottom" 
+            HorizontalAlignment="Left" Click="Button_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="ushort"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="62,206,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Click="UShortButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="int"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="62,261,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Click="IntButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="uint"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="62,316,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Click="UIntButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="long"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="258,39,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Grid.ColumnSpan="2" Click="LongButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="ulong"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="258,94,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Grid.ColumnSpan="2" Click="ULongButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="float"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="258,149,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Grid.ColumnSpan="2" Click="FloatButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="double"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="258,206,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Grid.ColumnSpan="2" Click="DoubleButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="string"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="258,261,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Grid.ColumnSpan="2" Click="StringButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+        <Button
+            Background="#fe90a2"
+            Foreground="#3F3F3F" 
+            Content="object"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24"
+            Width="170"
+            Height="50" 
+            Margin="258,316,0,0"
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" Grid.ColumnSpan="2" Click="ObjectButton_Click" Style="{DynamicResource ButtonStyleWhite}"/>
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="Byte.FilesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Byte"
+        mc:Ignorable="d"
+        Title="Вікно з інформацією про вибраний тип данних" 
+        Height="255" 
+        Width="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" >
+    <Grid Background="#ffccd0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.8*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button
+            Background="#fe6e7c"
+            Foreground="#3F3F3F" 
+            Content="Back"
+            BorderThickness="0,0,0,0"
+            FontFamily="Bahnschrift Light" 
+            FontSize="24" 
+            Grid.Column="1"
+            Margin="5"
+            Click="Button_Click" Grid.Row="1" Style="{DynamicResource ButtonStyleWhite}"/>
+        <TextBlock x:Name="FileTextBlock" 
+            Grid.ColumnSpan="3" 
+            Margin="15"
+            TextWrapping="Wrap"
+            FontFamily="Bahnschrift Light"
+            FontWeight="Bold"
+            Foreground="#575757" 
+            FontSize="16"/>
+    </Grid>
+</Window>
