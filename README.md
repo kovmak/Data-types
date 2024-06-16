@@ -7,7 +7,6 @@ This repository contains a program that demonstrates various data types in progr
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Examples](#examples)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -40,21 +39,6 @@ After installing the program, you can use it to learn about:
 - Custom data types (e.g., structures, classes)
 
 Explore each data type section to see examples and explanations.
-
-## Examples
-
-### Example 1: Primitive Data Types
-
-```c#
-# C#
-num_int = 10
-num_float = 3.14
-is_true = True
-
-print(type(num_int))    # Output: <class 'int'>
-print(type(num_float))  # Output: <class 'float'>
-print(type(is_true))    # Output: <class 'bool'>
-```
 
 ## Contributing
 
